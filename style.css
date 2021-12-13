@@ -6,3 +6,8 @@ body{
 h1{
     margin: auto;
 }
+button{
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
