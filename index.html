@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advinha numero</title>
+    <style>
+        body{
+            display: grid;
+            justify-content: center;
+            background-color: rgb(189, 219, 219);
+        }
+        h1{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advinhe o numero!</h1>
+    <h2>Eu vou pensar em um numero entre 1 e 10, tente advinhar qual é...</h2>
+    <h2>Qual é o seu palpite?</p>
+    <input id="palpite" type="number">
+    <button onclick = 'verResultado()'>Ver resultado!</button>
+    <button onClick="JogarDeNovo()">Jogar de Novo</button>
+    <p></p>
+
+    <script>
+        function verResultado(){
+            var palpite = document.getElementById('palpite').value;
+            var numSort = Math.floor(Math.random() * 10)
+            const resultado = document.querySelector('p');
+            if( palpite == numSort){
+                resultado.textContent = ('Voce ganhou!')
+            }else{
+                resultado.textContent = ('Voce perdeu! O numero era ' + numSort + '. Tente de novo.')
+            }
+        }  
+        function jogarDeNovo(){
+            var numSort = Math.floor(Math.random() * 10)
+
+        }
+        function JogarDeNovo(){
+            window.location.reload();
+        } 
+    </script>
+</body>
+</html>
