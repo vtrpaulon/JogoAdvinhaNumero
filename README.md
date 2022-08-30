@@ -1,3 +1,3 @@
 # JogoAdvinhaNumero
 
-##Este foi o meu primeiro projeto sozinho. Nele eu utilizei os conhecimentos em html, css e javascript
+## Nesse projeto eu utilizei conhecimentos em html, css e javascript. É simples, mas é uma maneira de praticar o que eu aprendi
