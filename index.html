@@ -11,10 +11,15 @@
 <body>
     <h1>Advinhe o numero!</h1>
     <h2>Eu vou pensar em um numero entre 1 e 10, tente advinhar qual é...</h2>
-    <h2>Qual é o seu palpite?</p>
-    <input id="palpite" type="number">
-    <button onclick = 'verResultado()'>Ver resultado!</button>
-    <button onClick="JogarDeNovo()">Jogar de Novo</button>
+    <div>
+        <label for="palpite">Qual é o seu palpite?</label>
+        <input id="palpite" type="number" placeholder="Palpite">
+    </div>
+    <div>
+        <button type="button" id="resultado" onclick = 'verResultado()'>Ver resultado!</button>
+        <button type="button" id="novo" onClick="JogarDeNovo()">Jogar de Novo</button>        
+    </div>
+
     <p></p>
 </body>
 </html>
